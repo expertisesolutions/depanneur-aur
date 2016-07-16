@@ -1,0 +1,23 @@
+diff --git a/Makefile b/Makefile
+index c930a48..e678d18 100644
+--- a/Makefile
++++ b/Makefile
+@@ -4,8 +4,6 @@ prefix=/usr
+ bindir=$(prefix)/bin
+ datadir=$(prefix)/share/depanneur
+ libdir=$(prefix)/lib
+-sudodir=/etc/sudoers.d
+-DESTDIR=
+ 
+ all:
+ 
+@@ -19,9 +17,6 @@ install:
+ 	    $(DESTDIR)$(bindir)
+ 	install -m750 -d \
+ 	    $(DESTDIR)$(sudodir)
+-	install -m440 \
+-        data/gbs \
+-        $(DESTDIR)$(sudodir)
+ 	install -m644 \
+         data/build-report.tmpl \
+         $(DESTDIR)$(datadir)/
