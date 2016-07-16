@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 license=('GPL')
 makedepends=('perl')
 depends=('perl' 'perl-yaml' 'perl-html-template' 'perl-json' 'perl-build')
-source=('git://git.tizen.org/tools/depanneur.git' 'fixes.patch')
+source=('git+https://git.tizen.org/cgit/tools/depanneur.git#branch=release-20160615' 'fixes.patch')
 sha256sums=('SKIP' '0284b42be48bb6b4345d5dd62489d9d7e0fb0590ebd48baece2525a5e7b0a9a2')
 
 build() {
