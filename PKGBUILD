@@ -14,7 +14,7 @@ sha256sums=('SKIP' '0284b42be48bb6b4345d5dd62489d9d7e0fb0590ebd48baece2525a5e7b0
 
 build() {
   cd $srcdir/depanneur
-  patch -p1 -i ../../fixes.patch
+  patch -p1 -i $srcdir/fixes.patch
 }
 
 package() {
